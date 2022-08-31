@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+    <script src="https://kit.fontawesome.com/b2df711599.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="flex-container">
+        <h1 class="flex-item-left">QR Code Scanner</h1>
+        <div class="wrapper flex-item-right">
+            <form action="#">
+                <input type="file" hidden>
+                <img class="qr" src="" alt="qr-code">
+                <div class="content">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p>Upload QR Code to Scan</p>
+                </div>
+            </form>
+            <div class="details">
+                <textarea class="textarea" disabled></textarea>
+                <div class="buttons">
+                    <button class="close-button">Close</button>
+                    <button class="copy-button">Copy Link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
